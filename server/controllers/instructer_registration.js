@@ -1,4 +1,4 @@
-exports.register_student = async (req, res) => {
+exports.register_instructor = async (req, res) => {
     const { id, name, branch, credit } = req.body;
     let con;
     try {
@@ -17,11 +17,11 @@ exports.register_student = async (req, res) => {
         const commit = await con.execute(
             `commit`
         );
+
+        res.status(200).json({
+            messege: "success"
+        })
     } catch (err) {
         console.log(err);
     }
-
-    res.status(200).json({
-        messege:"success"
-    })
 }
