@@ -1,4 +1,6 @@
 import axios from 'axios'
 
-export const studentregister = (studentinfo) => axios.post("https://localhost:5000/register/registerstudent", studentinfo);
-export const facultyregister = (teacherinfo) => axios.post("https://localhost:5000/register/registerinstructer", teacherinfo);
+const API = axios.create({ baseURL: "http://localhost:5000" })
+
+export const studentregister = (studentinfo) => API.post("/register/registerstudent", studentinfo);
+export const facultyregister = (teacherinfo) => axios.post("http://localhost:5000/register/registerinstructer", teacherinfo);
