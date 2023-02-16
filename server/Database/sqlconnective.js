@@ -13,7 +13,7 @@ exports.connect = async ()=>{
         );
         const data = await con.execute(
             // `select * from estudent`,
-            `insert into estudent values(3,'Neha Gaddam','Computer Science',19)`
+            `insert into estudent values(5,'Nikita Khot','Computer Science',19)`
         );
         // console.log(data.rows);
         const commit = await con.execute(
