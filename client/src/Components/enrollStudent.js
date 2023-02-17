@@ -40,10 +40,12 @@ export default () => {
                 }}>
                     Enroll Student
                 </Typography>
-                <Stack spacing={2}>
+                <Stack spacing={2} sx={{
+                    p:"2%"
+                }}>
                     <TextField label="student Id" placeholder="Enter student Id" name='id' onChange={handleChange} />
                     <div>
-                        <FormControl sx={{ m: 1, minWidth: 80 }}>
+                        <FormControl sx={{  minWidth: 430 }}>
                             <InputLabel id="demo-simple-select-autowidth-label">Course</InputLabel>
                             <Select
                                 labelId="demo-simple-select-autowidth-label"
