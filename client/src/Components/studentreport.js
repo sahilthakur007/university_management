@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography ,Paper,List,ListItem,Divider,ListItemButton,ListItemText } from "@mui/material"
+import { Typography ,Paper,List,ListItem,Divider,ListItemButton,ListItemText,Box } from "@mui/material"
 export default () => {
     const coursesTaken =["Computer Networks","Data Communication","Data Structure"]
     return (<>
@@ -14,17 +14,34 @@ export default () => {
                 mt:"5%"
             
         }}>
-            <Typography>
-                Name:- Divya Kekade
+                <Box >
+                    <Typography sx={{
+                        display: "flex",
+                        justifyContent: "left",
+                        ml: "4%",
+                        mt:"2%"
+                    }}>
+                        Name:- Divya Kekade
 
-            </Typography>
-            <Typography>
-                Branch:- Computer Science
-                {/* Course:-  */}
-                </Typography>
-                <Typography>
-                    Courses
-                </Typography>
+                    </Typography>
+                    <Typography sx={{
+                        display: "flex",
+                        justifyContent: "left",
+                        ml: "4%",
+                        mt: "2%"
+                    }}>
+                        Branch:- Computer Science
+                        {/* Course:-  */}
+                    </Typography>
+                    <Typography sx={{
+                        display: "flex",
+                        justifyContent: "left",
+                        ml: "4%",
+                        mt: "2%"
+                    }}>
+                        Courses Enroll:-
+                    </Typography>
+                 </Box>
                 {coursesTaken.map((course) => (
                     <List>
                         <ListItem>
@@ -34,7 +51,7 @@ export default () => {
                                     primary={course}
                                 />
                             </ListItemButton>
-                            <Divider />
+                            {/* <Divider /> */}
                         </ListItem>
                     </List>
                 ))}
