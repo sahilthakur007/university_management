@@ -9,7 +9,7 @@ exports.register_instructor = async (req, res) => {
             {
                 user: "p_2020BTECS00038",
                 password: "2020BTECS00038",
-                connectionString: "10.7.3.142/XEPDB1"
+                connectionString: "10.40.12.135/XEPDB1"
             }
         );
         const data = await con.execute(

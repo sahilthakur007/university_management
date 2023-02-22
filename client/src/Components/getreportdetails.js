@@ -1,13 +1,15 @@
 import { Button, Paper, Stack, TextField,Box } from "@mui/material";
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 export default () => {
+    const navigate = useNavigate();
     const [id, setid] = useState(0); 
     const handleChange = (e) => {
         setid(e.target.value); 
     }
     const handleClick = () => {
-        console.log(id); 
+        console.log(id);
+        navigate("/student-report",{state:id}) 
     }
     return (<>
         

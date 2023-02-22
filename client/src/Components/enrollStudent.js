@@ -9,7 +9,7 @@ import FormControl from '@mui/material/FormControl';
 import { studentenroll } from '../api';
 
 export default () => {
-    const coursesTaken = ["Computer Networks", "Data Communication", "Data Structure"]
+    const coursesTaken = ["Computer Network", "Data Communication", "Data Structure","Cloud Computing","Advanced Database Systems"]
     const [student, setstudent] = useState({
         id: 0,
         course: "",

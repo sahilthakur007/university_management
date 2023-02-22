@@ -2,10 +2,10 @@ import React from "react";
 import { Paper, Box, Typography, Stack, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 export default () => {
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
     return (<>
         <Typography variant="h3" sx={{
-            mt:"5%"
+            mt: "5%"
         }}>
             Welcome to University Portal
         </Typography>
@@ -13,33 +13,33 @@ export default () => {
             display: "flex",
             justifyContent: "center"
         }}>
-            
-        <Paper sx={{
-            height: "250px",
+
+            <Paper sx={{
+                height: "250px",
                 width: "55%",
-            mt:"7%"
-          
-                     }}> 
-                    
+                mt: "7%"
+
+            }}>
+
                 <Stack direction="row" sx={{
-                mt:"5%"
-            }} >
+                    mt: "5%"
+                }} >
                     <Button sx={{
                         ml: "4%",
-                        mr:"4%"
+                        mr: "4%"
                     }} onClick={() => navigate("/student-registration")}><Box sx={{
-                            backgroundColor: "#ff9800",
-                            height: "125px",
-                            width: "125px",
-                        borderRadius:"5%"
+                        backgroundColor: "#ff9800",
+                        height: "125px",
+                        width: "125px",
+                        borderRadius: "5%"
                     }}>
                             <Typography sx={{
                                 color: "#ffffff",
                                 textTransform: "none",
                                 fontSize: "22px",
-                                verticalAlign:"middle"
+                                verticalAlign: "middle"
                             }}>Register Student</Typography>
-                       </Box></Button>
+                        </Box></Button>
                     <Button sx={{
                         ml: "4%",
                         mr: "4%"
@@ -72,7 +72,7 @@ export default () => {
                                 fontSize: "22px"
                             }}>Enroll Student</Typography>
                         </Box></Button>
-                    
+
                     <Button sx={{
                         ml: "4%",
                         mr: "4%"
@@ -89,10 +89,10 @@ export default () => {
                             }}>View Report</Typography>
                         </Box></Button>
 
-                    </Stack>
-               
-            </Paper> 
-            
-        </Box>       
+                </Stack>
+
+            </Paper>
+
+        </Box>
     </>)
 }
