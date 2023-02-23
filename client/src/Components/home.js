@@ -4,14 +4,15 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 export default () => {
     const navigate = useNavigate();
-    useEffect(async ()=>{
-        const res =  await axios.get("https://ipinfo.io")
-        console.log(res)
+    useEffect(() => {
 
-        const geti = aysnc()=>{
 
+        const getip = async () => {
+            const res = await axios.get("https://api.ipify.org/?format=json")
+            console.log(res)
         }
-    },[])
+        getip()
+    }, [])
     return (<>
         <Typography variant="h3" sx={{
             mt: "5%"
