@@ -34,6 +34,12 @@ export default () => {
                 mt: "5%"
 
             }}>
+                <Typography variant="h4" sx={{
+                    mb: "10px",
+                    color: "#ff9800"
+                }}>
+                    Student Report
+                </Typography>
                 <Box >
                     <Typography sx={{
                         display: "flex",
@@ -41,7 +47,7 @@ export default () => {
                         ml: "4%",
                         mt: "2%"
                     }}>
-                        Name:- {user.name}
+                        <b>Name</b>:- {user.name}
 
                     </Typography>
                     <Typography sx={{
@@ -50,7 +56,7 @@ export default () => {
                         ml: "4%",
                         mt: "2%"
                     }}>
-                        Branch:- {user.department}
+                        <b>Branch</b>:- {user.department}
                         {/* Course:-  */}
                     </Typography>
                     <Typography sx={{
@@ -59,7 +65,7 @@ export default () => {
                         ml: "4%",
                         mt: "2%"
                     }}>
-                        Courses Enroll:-
+                        <b>Courses Enrolled</b>:-
                     </Typography>
                 </Box>
 

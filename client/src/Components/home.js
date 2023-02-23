@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Paper, Box, Typography, Stack, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 export default () => {
     const navigate = useNavigate();
+    useEffect(async ()=>{
+        const res =  await axios.get("https://ipinfo.io")
+        console.log(res)
+
+        const geti = aysnc()=>{
+
+        }
+    },[])
     return (<>
         <Typography variant="h3" sx={{
             mt: "5%"
