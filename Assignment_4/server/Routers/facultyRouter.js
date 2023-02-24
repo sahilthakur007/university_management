@@ -1,0 +1,11 @@
+const express = require("express");
+const { sendSubjects, storeQuestion, sendQuestion, storeQuestionPaper, sendQuestionPaperList } = require("../Controller/faculty");
+// const { Studentlogin } = require("../Controller/login");
+// const { default: StudentLogin } = require("../../client/src/component/StudentLogin");
+const Router =  express.Router(); 
+Router.route("/subject/:id").get(sendSubjects);
+Router.route("/question").post(storeQuestion);
+Router.route("/questionpaper").post(storeQuestionPaper);
+Router.route("/getquestion/:subject").get(sendQuestion);
+Router.route("/getquestionpaperlist").get(sendQuestionPaperList);
+module.exports=Router;
