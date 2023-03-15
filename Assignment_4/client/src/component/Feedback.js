@@ -6,7 +6,7 @@ export default () => {
             <Box sx={{display:"flex",flexDirection:"column",alignItems:"center"}}>
                 <Paper sx={{width:"50%",display:"flex",flexDirection:"column",alignItems:"center",mt:'10%'}}>
                     <Typography sx={{color:"orange",fontSize:'40px'}}>Thank You for attempting the test!</Typography>
-                    <Typography sx={{mt:'2%',fontSize:"20px"}}>Your score: <b>28/30</b></Typography>
+                    <Typography sx={{mt:'2%',fontSize:"20px"}}>Your score: <b>8/10</b></Typography>
                 </Paper>
             </Box>
         </>

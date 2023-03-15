@@ -1,4 +1,6 @@
 const oracledb = require('oracledb');
+const ip = "10.7.3.142/XEPDB1";
+
 oracledb.outFormat = oracledb.OUT_FORMAT_OBJECT;
 exports.sendSubjects = async(req,res)=>{
     
@@ -10,7 +12,7 @@ exports.sendSubjects = async(req,res)=>{
             {
                 user: "p_2020BTECS00038",
                 password: "2020BTECS00038",
-                connectionString: "10.40.12.135/XEPDB1"
+                connectionString: ip
             }
         );
         const data = await con.execute(
@@ -48,7 +50,7 @@ exports.storeQuestion = async(req,res)=>{
             {
                 user: "p_2020BTECS00038",
                 password: "2020BTECS00038",
-                connectionString: "10.40.12.135/XEPDB1"
+                connectionString: ip
             }
         );
         const data = await con.execute(
@@ -77,7 +79,7 @@ exports.sendQuestion = async(req,res)=>{
             {
                 user: "p_2020BTECS00038",
                 password: "2020BTECS00038",
-                connectionString: "10.40.12.135/XEPDB1"
+                connectionString: ip
             }
         );
         const data = await con.execute(
@@ -115,7 +117,7 @@ exports.storeQuestionPaper = async(req,res)=>{
             {
                 user: "p_2020BTECS00038",
                 password: "2020BTECS00038",
-                connectionString: "10.40.12.135/XEPDB1"
+                connectionString: ip
             }
         );
         console.log(question.length)
@@ -159,7 +161,7 @@ exports.sendQuestionPaperList = async(req,res)=>{
             {
                 user: "p_2020BTECS00038",
                 password: "2020BTECS00038",
-                connectionString: "10.40.12.135/XEPDB1"
+                connectionString: ip
             }
         );
       

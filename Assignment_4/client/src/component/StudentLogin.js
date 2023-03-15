@@ -36,7 +36,7 @@ export default () => {
                 </Typography>
                 <Stack spacing = {2}>
                     <TextField label= "PRN" placeholder="Enter PRN" name ='prn' onChange={handleChange}/>
-                    <TextField label="Password" placeholder="Enter Password " name='password' onChange={handleChange} />
+                    <TextField label="Password" type="password"placeholder="Enter Password " name='password' onChange={handleChange} />
 
                 </Stack>
                 <Button variant = "contained" size = "large" sx={{

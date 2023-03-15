@@ -8,8 +8,10 @@ export default ()=>{
         display:"flex",
         justifyContent:"center",
         height:"500px",
-        alignItems:"center"
+        alignItems:"center",
+        flexDirection:"column"
     }}>
+          <Typography sx={{color:"orange",fontSize:'40px'}}>Welcome</Typography>
     <Paper sx={{
         // width:""
         p:"4%"
